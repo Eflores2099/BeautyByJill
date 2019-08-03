@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 
 import headerStyles from "./header.module.scss"
 
+
 const Header = () => {
   return (
     <header className={headerStyles.header}>
-      <nav>
+      <div className = {headerStyles.container}>
+      <nav className={headerStyles.headerLeft}>
         <ul className={headerStyles.navList}>
           <li>
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">
@@ -35,14 +37,13 @@ const Header = () => {
           Beauty by Jill O'Farrell
         </Link>
       </h1>
-      <div>
-        <p>
+      <div className= {headerStyles.headerRight}>
+      <div className = {headerStyles.socialLinks}> 
           <a href="https://twitter.com/@jill_ofarrell"  title= "Twitter" target="_blank">Twitter</a> 
-        </p>
-            
-        <p>
+
           <a href="https://instagram.com/beautybyjillofarrell" title="Instagram" target="_blank">Instagram</a>
-        </p>
+      </div>
+      </div>
       </div>
     </header>
   )
