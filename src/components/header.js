@@ -37,13 +37,20 @@ const Header = () => {
           Beauty by Jill O'Farrell
         </Link>
       </h1>
-      <div className= {headerStyles.headerRight}>
-      <div className = {headerStyles.socialLinks}> 
-          <a href="https://twitter.com/@jill_ofarrell"  title= "Twitter" target="_blank">Twitter</a> 
-
-          <a href="https://instagram.com/beautybyjillofarrell" title="Instagram" target="_blank">Instagram</a>
-      </div>
-      </div>
+        <div className= {headerStyles.headerRight}>
+          <ul className = {headerStyles.socialLinks}> 
+            <li>
+            <span>
+              <a href="https://twitter.com/@jill_ofarrell"  title= "Twitter" target="_blank">Twitter</a> 
+            </span>
+            </li>
+            <li>
+            <span>
+              <a href="https://instagram.com/beautybyjillofarrell" title="Instagram" target="_blank">Instagram</a>
+            </span>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   )

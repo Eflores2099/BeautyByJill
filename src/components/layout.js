@@ -9,7 +9,6 @@ import layoutStyles from './layout.module.scss'
 
 const Layout = (props) => {
     return (
-        <div className= {layoutStyles.siteWrapper}>
             <div className={layoutStyles.container}>
                 <div className={layoutStyles.content}>
                     <Header />
@@ -17,7 +16,6 @@ const Layout = (props) => {
                 </div>
                 <Footer />
             </div>
-        </div>
     )
 }
 
