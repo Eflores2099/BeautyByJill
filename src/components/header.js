@@ -7,7 +7,7 @@ import headerStyles from "./header.module.scss"
 const Header = () => {
   return (
     <header className={headerStyles.header}>
-      <div className = {headerStyles.container}>
+      
       <nav className={headerStyles.headerLeft}>
         <ul className={headerStyles.navList}>
           <li>
@@ -32,26 +32,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <h1>
         <Link className={headerStyles.title} to="/">
           Beauty by Jill O'Farrell
         </Link>
-      </h1>
-        <div className= {headerStyles.headerRight}>
-          <ul className = {headerStyles.socialLinks}> 
-            <li>
-            <span>
-              <a href="https://twitter.com/@jill_ofarrell"  title= "Twitter" target="_blank">Twitter</a> 
-            </span>
-            </li>
-            <li>
-            <span>
-              <a href="https://instagram.com/beautybyjillofarrell" title="Instagram" target="_blank">Instagram</a>
-            </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+
     </header>
   )
 }
