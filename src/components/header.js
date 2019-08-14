@@ -9,28 +9,28 @@ const Header = () => {
     <header className={headerStyles.header}>
       
       <nav className={headerStyles.headerLeft}>
-        <ul className={headerStyles.navList}>
-          <li>
+        <div className={headerStyles.navList}>
+          
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">
               Home
             </Link>
-          </li>
-          <li>
+          
+          
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">
               Blog
             </Link>
-          </li>
-          <li>
+          
+          
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">
               About
             </Link>
-          </li>
-          <li>
+          
+        
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">
               Contact
             </Link>
-          </li>
-        </ul>
+          
+        </div>
       </nav>
         <Link className={headerStyles.title} to="/">
           Beauty by Jill O'Farrell
