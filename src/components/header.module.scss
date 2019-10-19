@@ -1,8 +1,8 @@
 
-.header{
+.header {
     padding: 1rem 0 3rem;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
     height: 15px;
@@ -21,7 +21,9 @@
 
 .nav-list {
     display: flex;
+    flex-direction: row;
     list-style-type: none;
+    position:relative;
     margin: 0;
     height:25px;
 }
